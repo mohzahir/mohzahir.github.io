@@ -53,7 +53,6 @@
 	<!-- //by me -->
 	<!-- <link rel='stylesheet' id='ryancv-style-css' href='https://demo.ar-themes.com/betaqa/wp-content/themes/btaqa/style.css?ver=6.1.1' type='text/css' media='all' /> -->
 	<!-- <link rel="stylesheet" href="https://demo.ar-themes.com/betaqa/wp-content/themes/btaqa/rtl.css" type="text/css" media="screen" /> -->
-
 	<!--
 		Background Gradient
 	-->
@@ -130,11 +129,160 @@
 			margin-right: 15px;
 			float: left;
 		}
+		/* begin shop style*/
+		ul.products{
+			margin: 0 -30px;
+    		margin-top: -1px;
+			margin: 0 0 1em;
+			padding: 0;
+			list-style: none outside;
+			clear: both;
+		}
+		ul.products li.first{
+			clear: both;
+		}
+		@media (max-width: 1120px) {
+			li.product {
+				margin: 0;
+			}
+		}
+		.products li {
+			list-style: none outside;
+		}
+		.product{
+			width: 49.998% !important;
+			position: relative;
+			margin: 0;
+			padding: 30px !important;
+			float: none;
+		}
+		.product_link{
+			text-decoration: none;
+			box-shadow: none;
+			color: #1e73be;
+			opacity: 1;
+    		outline: none;
+		}
+		.onsale{
+			right: auto;
+    		left: 40px;
+			top: 40px;
+    		margin: 0;
+			background: #1e73be;
+			margin: 0;
+			padding: 0 10px;
+			position: absolute;
+			top: 35px;
+			left: 35px;
+			min-height: auto;
+			min-width: auto;
+			font-size: 12px;
+			font-weight: 500;
+			color: #fff;
+			text-align: center;
+			height: 30px;
+			line-height: 30px;
+			border-radius: 4px;
+			-webkit-border-radius: 4px;
+			z-index: 9;
+		}
+		.attachment_thumbnail{
+			margin: 0 0 15px 0;
+			width: 100%;
+			height: auto;
+			display: block;
+			margin: 0 0 1em;
+			box-shadow: none;
+			max-width: 100%;
+			border: none;
+			border-radius: 0;
+		}
+		.product_title{
+			margin: 0 0 0 70px;
+			padding: 0 0 5px 0;
+			font-family: 'Tajawal';
+			font-size: 17px;
+			font-weight: 500;
+			color: #323232;
+			line-height: 1.4em;
+		}
+		.price{
+			float: right;
+			margin: 0;
+			color: #323232;
+			display: block;
+			font-weight: 400;
+			font-size: 14px;
+			height: 20px;
+			line-height: 25px;
+		}
 
-		
+		.price del{
+			color: inherit;
+			opacity: .5;
+			display: inline-block;
+		}
+		.price ins{
+			margin-left: 0;
+    		margin-right: 5px;
+			font-weight: 600;
+    		font-size: 16px;
+			background: 0 0;
+			display: inline-block;
+			text-decoration: none;
+		}
+		.add_to_cart_button{
+			float: left;
+			position: relative;
+			padding: 0;
+			margin: 0;
+			margin-top: -28px;
+			font-size: 0;
+			width: 50px;
+			text-decoration: none;
+
+			display: inline-block;
+			height: 50px;
+			line-height: 50px;
+			background: #eee;
+			-webkit-border-radius: 4px;
+			color: #323232;
+			font-weight: 500;
+			text-align: center;
+			text-transform: uppercase;
+			border: none;
+			transition: all .3s ease 0s;
+			-webkit-transition: all .3s ease 0s;
+
+			cursor: pointer;
+			overflow: visible;
+			right: auto;
+			box-shadow: none;
+    		text-shadow: none;
+		}
+		.add_to_cart_button:before {
+			left: auto;
+			right: 0;
+			content: "\f370";
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			font-family: "Ionicons";
+			line-height: 50px;
+			font-size: 20px;
+			display: block;
+			background: none;
+		}
+		.add_to_cart_button:hover{
+			background-color: #dfdcde;
+    		color: #515151;
+			background-image: none;
+		}
+
+
 	</style>
 
-	
 </head>
 
 <body>
@@ -209,6 +357,12 @@
 							<a href="#contacts-card">
 								<span class="icon ion-at"></span>
 								<span class="link">اتصل بي</span>
+							</a>
+						</li>
+						<li>
+							<a href="#shop">
+								<span class="icon ion-android-cart"></span>
+								<span class="link">المتجر</span>
 							</a>
 						</li>
 					</ul>
@@ -1752,7 +1906,7 @@
 						<div class="row border-line-v">
 
 							<!-- blog item -->
-							<div class="col col-d-12 col-t-12 col-m-12 border-line-h">
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
 								<div class="box-item">
 									<div class="image">
 										<a href="blog-post-rtl.html">
@@ -1771,7 +1925,7 @@
 							</div>
 
 							<!-- blog item -->
-							<div class="col col-d-12 col-t-12 col-m-12 border-line-h">
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
 								<div class="box-item">
 									<div class="image">
 										<a href="blog-post-rtl.html">
@@ -1790,7 +1944,7 @@
 							</div>
 
 							<!-- blog item -->
-							<div class="col col-d-12 col-t-12 col-m-12 border-line-h">
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
 								<div class="box-item">
 									<div class="image">
 										<a href="blog-post-rtl.html">
@@ -1924,6 +2078,132 @@
 
 				</div>
 			</div>
+
+			<!--
+				Card - Shop
+			-->
+			<div class="card-inner blog" id="shop">
+				<div class="card-wrap">
+
+					<!--
+						Blog
+					-->
+					<div class="content blog">
+
+						<!-- title -->
+						<div class="title">منتجاتي</div>
+
+						<!-- content -->
+						<!-- <div class="row border-line-v">
+
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
+								<div class="box-item">
+									<div class="image">
+										<a href="blog-post-rtl.html">
+											<img src="images/blog/blog1.jpg" alt="" />
+											<span class="info">
+												<span class="ion ion-document-text"></span>
+											</span>
+											<span class="date"><strong>20</strong>يونيو</span>
+										</a>
+									</div>
+									<div class="desc">
+										<a href="blog-post-rtl.html" class="name">على الرغم من القيام به من السماح أحمر الخدود</a>
+										<div class="category">التصميم</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
+								<div class="box-item">
+									<div class="image">
+										<a href="blog-post-rtl.html">
+											<img src="images/blog/blog2.jpg" alt="" />
+											<span class="info">
+												<span class="ion ion-document-text"></span>
+											</span>
+											<span class="date"><strong>19</strong>يونيو</span>
+										</a>
+									</div>
+									<div class="desc">
+										<a href="blog-post-rtl.html" class="name">اثنان قبل السهم غير معتمد</a>
+										<div class="category">الترميز</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
+								<div class="box-item">
+									<div class="image">
+										<a href="blog-post-rtl.html">
+											<img src="images/blog/blog3.jpg" alt="" />
+											<span class="info">
+												<span class="ion ion-document-text"></span>
+											</span>
+											<span class="date"><strong>20</strong>يونيو</span>
+										</a>
+									</div>
+									<div class="desc">
+										<a href="blog-post-rtl.html" class="name">على الرغم من القيام به من السماح أحمر الخدود</a>
+										<div class="category">السفر</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="clear"></div>
+						</div> -->
+
+						<ul class="products columns-2 row border-line-v">
+					
+							<li class="col col-d-6 col-t-6 col-m-12 border-line-h product first">
+								<a href="/product/betaqa-theme/" class="product_link">
+									<span class="onsale">تخفيض!</span>
+									<img decoding="async" width="300" height="300" src="images/works/personal.PNG" class="attachment_thumbnail" alt="">
+									<h2 class="product_title">موقع شخصي</h2>
+									<span class="price">
+										<del aria-hidden="true">
+											<span class="Price_amount">
+												<bdi><span class="Price_currencySymbol">$</span>60.00</bdi>
+											</span>
+										</del> 
+										<ins>
+											<span class="Price_amount_discount">
+												<bdi><span class="Price_currencySymbol">$</span>40.00</bdi>
+											</span>
+										</ins>
+									</span>
+								</a>
+								<a href="?add-to-cart=348" data-quantity="1" class="add_to_cart_button" data-product_id="348" data-product_sku="" aria-label="إضافة &quot;قالب بطاقة&quot; إلى سلة مشترياتك" rel="nofollow">إضافة إلى السلة</a>
+							</li>
+							<li class="col col-d-6 col-t-6 col-m-12 border-line-h product first">
+								<a href="/product/betaqa-theme/" class="product_link">
+									<span class="onsale">تخفيض!</span>
+									<img decoding="async" width="300" height="300" src="images/works/pos.jpeg" class="attachment_thumbnail" alt="">
+									<h2 class="product_title">نظام ادارة المبيعات</h2>
+									<span class="price">
+										<del aria-hidden="true">
+											<span class="Price_amount">
+												<bdi><span class="Price_currencySymbol">$</span>120.00</bdi>
+											</span>
+										</del> 
+										<ins>
+											<span class="Price_amount_discount">
+												<bdi><span class="Price_currencySymbol">$</span>100.00</bdi>
+											</span>
+										</ins>
+									</span>
+								</a>
+								<a href="?add-to-cart=348" data-quantity="1" class="add_to_cart_button" data-product_id="348" data-product_sku="" aria-label="إضافة &quot;قالب بطاقة&quot; إلى سلة مشترياتك" rel="nofollow">إضافة إلى السلة</a>
+							</li>
+		
+							<div class="clear"></div>
+						</ul>
+
+					</div>
+
+				</div>
+			</div>
+			
 
 		</div>
 	</div>
